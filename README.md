@@ -14,7 +14,6 @@ apnea-project/
 ├── models/           # Trained model artifacts
 ├── reports/
 │   └── figures/      # Generated plots and figures
-├── tableau/          # Tableau-ready exports
 └── README.md
 ```
 
@@ -30,7 +29,6 @@ apnea-project/
 | 05 | `05_feature_extraction.ipynb` | Compute time-domain, frequency-domain, and nonlinear HRV features per window | `data/rpeaks/`; apnea labels; window parameters | `data/features/features.parquet`; feature description table |
 | 06 | `06_modeling.ipynb` | Train and tune classifiers (LR, RF, XGBoost) with cross-validation | `data/features/`; train/val split | Trained model artifacts in `models/`; CV scores; tuning results |
 | 07 | `07_evaluation.ipynb` | Evaluate final model on held-out test set; compute clinical metrics | `models/`; test split from `data/features/` | Metrics report in `reports/`; ROC/PR curves, SHAP plots in `reports/figures/` |
-| 08 | `08_tableau_export.ipynb` | Prepare and export datasets for Tableau dashboard creation | `data/features/`; `reports/` metrics; model predictions | CSV / `.hyper` files in `tableau/`; data dictionary |
 
 ## Status
 
