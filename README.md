@@ -34,4 +34,4 @@ apnea-project/
 
 ## Status
 
-All notebooks: **NOT STARTED**
+All notebooks: **COMPLETE**
